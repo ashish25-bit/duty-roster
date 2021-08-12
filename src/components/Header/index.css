@@ -1,0 +1,18 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-gap: 10px;
+}
+
+header .logo {
+  width: 60px;
+}
+
+header .dept-input-field {
+  width: 100%;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+}

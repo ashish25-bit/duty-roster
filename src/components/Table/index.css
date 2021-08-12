@@ -1,0 +1,59 @@
+table {
+  width:100%;
+}
+
+.weekday-row td{
+  text-align: center;
+  font-size: 10px;
+}
+
+.designation input,
+.name input {
+  width: 95%;
+}
+
+table input {
+  border: none;
+  height: 23px;
+  text-align: center;
+}
+
+table thead th {
+  font-size: 10px;
+}
+
+table thead .date {
+  width: 10px;
+}
+
+.selector {
+  width: 35px;
+  text-transform: uppercase;
+}
+
+.selector::-webkit-calendar-picker-indicator {
+  display:none !important;
+}
+
+.designation {
+  width: 30px;
+}
+
+.controller-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(0 0 0 / 15%)
+}
+
+@media print {
+  .designation input {
+    width: 30px;
+  }
+
+  .name input {
+    width: 150px;
+  }
+}
