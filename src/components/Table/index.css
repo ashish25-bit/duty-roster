@@ -36,7 +36,7 @@ table thead .date {
 }
 
 .designation {
-  width: 30px;
+  width: 50px;
 }
 
 .controller-container {
@@ -50,7 +50,7 @@ table thead .date {
 
 @media print {
   .designation input {
-    width: 30px;
+    width: 50px;
   }
 
   .name input {
