@@ -57,3 +57,10 @@ table thead .date {
     width: 150px;
   }
 }
+
+.name {
+  text-align: right;
+}
+.name-field {
+  text-align: left;
+}

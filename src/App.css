@@ -24,3 +24,9 @@ input[type=number] {
 button {
   cursor: pointer;
 }
+
+@media print {
+  .main-container {
+    width: 100%;
+  }
+}
