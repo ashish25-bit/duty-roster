@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { KEYBOARD_ACTIONS } from "../../utils/actions";
 
 const ControllerContainer = ({ openModal, deleteRow }) => {
   function closeModal(e) {
@@ -6,6 +7,13 @@ const ControllerContainer = ({ openModal, deleteRow }) => {
       openModal(false, -1);
     }
   }
+
+  useEffect(() => {
+    window.onkeydown = function(e) {
+      if (e.code === KEYBOARD_ACTIONS.escape)
+        openModal(false, -1);
+    };
+  }, [openModal]);
 
   return (
     <div className="controller-container" onClick={(e) => closeModal(e)}>

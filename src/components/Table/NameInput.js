@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NameInput = ({ nameClass, row, value }) => {
+const NameInput = ({ nameClass, row, value, column, onKeyDownHandler }) => {
   const [name, setName] = useState(value);
 
   return (
@@ -11,6 +11,8 @@ const NameInput = ({ nameClass, row, value }) => {
         onChange={(e) => setName(e.target.value)}
         className={`${nameClass}-field`}
         row={row}
+        col={column}
+        onKeyDown={onKeyDownHandler}
       />
     </td>
   );

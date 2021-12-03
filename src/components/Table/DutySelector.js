@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { dutyList } from "../../utils/constant";
 
-const DutySelector = ({ row, column, initialValue }) => {
+const DutySelector = ({ row, column, initialValue, onKeyDownHandler }) => {
   const [val, setVal] = useState(initialValue);
   return (
     <td>
@@ -10,9 +10,10 @@ const DutySelector = ({ row, column, initialValue }) => {
         type="text"
         list="duty"
         row={row}
-        col={column}
+        col={column + 3}
         value={val}
         onChange={(e) => setVal(e.target.value)}
+        onKeyDown={onKeyDownHandler}
       />
       <datalist id="duty">
         {dutyList.map((value) => (
