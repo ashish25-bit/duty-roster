@@ -10,7 +10,7 @@ const DutySelector = ({ row, column, initialValue, onKeyDownHandler }) => {
         type="text"
         list="duty"
         row={row}
-        col={column + 3}
+        col={column}
         value={val}
         onChange={(e) => setVal(e.target.value)}
         onKeyDown={onKeyDownHandler}

@@ -17,9 +17,10 @@ const Table = () => {
 
   const handleUserKeyPress = useCallback(
     (e) => {
-      if (e.code === "Enter" && e.ctrlKey) {
+      if ((e.code === "Enter" || e.code === "NumpadEnter") && e.ctrlKey) {
         addRow();
-      } else if (e.code === "KeyS" && e.ctrlKey) {
+      }
+      else if (e.code === "KeyS" && e.ctrlKey) {
         e.preventDefault();
         const data = saveRowData(rowData.length, days);
         localStorage.setItem("duty", JSON.stringify(data));

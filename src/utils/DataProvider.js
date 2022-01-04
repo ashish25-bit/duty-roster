@@ -99,6 +99,9 @@ const DataProvider = (props) => {
       duty: new Array(days),
     };
 
+    for (let i=0; i < days; i++)
+      obj.duty[i] = "";
+
     setRowData((prevState) => [...prevState, obj]);
   }
 
