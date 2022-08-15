@@ -26,6 +26,10 @@ table thead .date {
   width: 10px;
 }
 
+table tbody tr input {
+  font-weight: bold;
+}
+
 .selector {
   width: 35px;
   text-transform: uppercase;
